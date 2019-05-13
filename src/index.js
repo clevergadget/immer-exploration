@@ -14,4 +14,5 @@ const baseState = [
 const nextState = produce(baseState, draftState => {
     draftState.push({todo: "Tweet about it"})
     draftState[1].done = true
+    console.log(baseState)
 })
